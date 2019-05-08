@@ -3,9 +3,9 @@
 }
 
 
-
 .vertical-flex {
     flex-direction: column;
+    text-align: center;
 }
 
 .data-container {

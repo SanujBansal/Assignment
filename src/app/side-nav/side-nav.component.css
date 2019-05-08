@@ -1,29 +1,21 @@
-#InnerNav {
-    background-color: antiquewhite;
-    height: 100vh;
-    display: flex;
-}
 
 
 .icon-item {
     width: fit-content;
 }
 
-.button-item {
+.text-part {
     width: fit-content;
-    margin-top: 7.5px;
 }
 
-.icon-part {
-    flex-direction: column;
-}
-
-.button-part {
-    flex-direction: column;
-}
 
 mat-icon {
     position: relative;
-    top: 7px;
+    top: 0px;
     margin-right: 10px;
+}
+
+.division {
+    display: flex;
+    margin: 10px;
 }

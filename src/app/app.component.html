@@ -2,11 +2,11 @@
 <div class="side-nav">
 <app-side-nav></app-side-nav>
 </div>
-<div class="vertical-flex">
+<div class="vertical-flex w-100">
 <div class="top-nav">
-<app-top-nav></app-top-nav>
+<app-top-nav (eventEmitter)='toggle($event)'></app-top-nav>
 </div>
-<div class="data-container">
+<div class="data-container mt-2">
 <app-data-container></app-data-container>
 </div>
 </div>

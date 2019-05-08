@@ -1,19 +1,23 @@
+<div style="height: 100vh; width: fit-content; background-color: blanchedalmond" class="p-3">
+<h3 #heading style="text-align: center; padding: 5px">My App</h3>
 
-
-<div id="InnerNav">
-  <div class="icon-part mt-3 ml-3">
-      <div class="icon-item"><mat-icon> home </mat-icon></div>
-      <div class="icon-item"><mat-icon> face </mat-icon></div>
-      <div class="icon-item"><mat-icon> settings </mat-icon></div>
-      <div class="icon-item"><mat-icon> face </mat-icon></div>
-      <div class="icon-item"><mat-icon> logout </mat-icon></div>
-  </div>
-  <div class="button-part mr-3 mt-3">
-    <div class="button-item"><a routerLink="/dashboard">Dashboard</a></div>
-    <div class="button-item"><a routerLink="/profile">Profile</a></div>
-    <div class="button-item"><a routerLink="/setting">Setting</a></div>
-    <div class="button-item"><a routerLink="/friends">Friends</a></div>
-    <div class="button-item"><a routerLink="/layout">logout</a></div>
-
-  </div>
+  <div #togglepart class="icon-part mt-3" style="top:80px">
+      <div class="division"> <div class="icon-item mt-2"><mat-icon> home </mat-icon></div>
+      <mat-expansion-panel style=" box-shadow: none; background-color: blanchedalmond" class="text-part">
+         <mat-expansion-panel-header routerLink="dashboard">Dashboard </mat-expansion-panel-header>
+         <mat-action-row (click)='gotoChild1()'>
+         Child1
+         </mat-action-row>
+         <mat-action-row (click)='gotoChild2()'>
+          Child 2
+         </mat-action-row>
+         
+         </mat-expansion-panel>
+ 
+      </div>
+     <div class="division" routerLink="/profile"> <div class="icon-item"><mat-icon> face </mat-icon></div><div class=" ml-4 text-part" >Profile</div></div>
+     <div class="division" routerLink="/setting"> <div class="icon-item"><mat-icon> settings </mat-icon></div><div class="ml-4 text-part" >Setting</div></div>
+     <div class="division" routerLink="/friends"> <div class="icon-item"><mat-icon> face </mat-icon></div><div class="ml-4 text-part" >Friends</div></div>
+     <div class="division" routerLink="/layout"> <div class="icon-item"><mat-icon> logout </mat-icon></div><div class="ml-4 text-part" >logout></div></div>
+ 
 </div>
